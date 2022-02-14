@@ -45,5 +45,8 @@ public class Student {
 		student02.showStudentInfor();
 		student03.showStudentInfor();
 		
+		System.out.println(student02); //classpart.Student@34c45dca
+		System.out.println(student03); //classpart.Student@52cc8049
+		
 	}
 }
