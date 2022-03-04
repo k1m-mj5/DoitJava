@@ -1,9 +1,11 @@
 package collection;
 
-public class Member {
+public class Member implements Comparable<Member>{
 
 	private int memberId;
 	private String memberName;
+	
+	public Member() {}
 	
 	public Member(int memberId, String memberName) {
 		this.memberId = memberId;
@@ -44,6 +46,12 @@ public class Member {
 		}
 		return false;
 	}
+
+	@Override
+	public int compareTo(Member member) {
+		return (this.memberId = member.memberId);
+	}
 	
+
 	
 }
