@@ -8,21 +8,11 @@ public class ExceptionTest {
 
 	public static void main(String[] args) {
 
-		FileInputStream fis = null;
-		
-		try {
-			fis = new FileInputStream("a.txt");
-		} catch (FileNotFoundException e) {
+		try { 
+			FileInputStream fis = new FileInputStream("a.txt");
+		} catch (IOException e) {
 			System.out.println(e);
-		} finally {
-			try {
-				fis.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			System.out.println("finally");
-		}
+		} 
 		System.out.println("end");
 	}
 
